@@ -8,12 +8,16 @@ import org.apache.commons.logging.LogFactory;
  * By default
  *    org.apache.commons.logging.impl.LogFactoryImpl
  *    org.apache.commons.logging.impl.Jdk14Logger, Jdk14Logger uses the Java 1.4+ java.util.logging classes.
+ * 
  * 2. using commons-logging.properties configuration file
+ *    java -cp jcl.jar:/Users/wangbo/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar \
+ *         -Djava.util.logging.config.file=/Users/wangbo/DevHome/Projects/logginglab/jcl/target/classes/logging.properties \
+ *         com.martian.apps.logginglab.jcl.Demo
  * 
  */
-public class DemoFirst {
+public class Demo {
 
-	private final static Log LOG = LogFactory.getLog(DemoFirst.class);
+	private final static Log LOG = LogFactory.getLog(Demo.class);
 	
 	public static void main(String[] args){
         // basic config
